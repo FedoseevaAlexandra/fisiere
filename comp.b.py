@@ -1,5 +1,5 @@
 
-#cu cifre
+#cu numere
 a=[]
 with open ('input.txt','r') as f:
     l=f.readline()
