@@ -3,13 +3,10 @@
 a=[]
 with open ('input.txt','r') as f:
     l=f.readline()
-l.split(' ')
+l=l.split(' ')
 a.extend(l)
-for y in range (a.count(' ')):
-    a.remove(' ')
-
 c1=0
-for i in range(len(a)):
+for i in range(len(a)):              
     a[i]=int(a[i])
 k=[] 
 for d in range(len(a)):
@@ -21,6 +18,5 @@ for d in range(len(a)):
     if c2==c1:
         if a[d] not in k:
           k.append(a[d])
-for i in range (len(k)):
-    k[i]=int(k[i])
-print(k)  
+k=str(k)
+print(k)
